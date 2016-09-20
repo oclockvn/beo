@@ -1,0 +1,106 @@
+//---variables
+$blue: #2196f3;
+
+//---settings
+html, body {
+    background-color: #fafafa;
+}
+
+body {
+    padding-bottom: 50px;
+}
+
+//---helper
+.r0 {
+    border-radius: 0 !important;
+}
+
+.b {
+    border: 1px solid #000;
+}
+
+.h {
+    height: 500px;
+}
+
+.bgc-white {
+    background-color: #fff;
+}
+
+//---components
+.z-depth1 {
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.14),0 2px 2px 0 rgba(0,0,0,.098),0 1px 5px 0 rgba(0,0,0,.084);
+}
+
+.z-depth2 {
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,.14),0 4px 5px 0 rgba(0,0,0,.098),0 1px 10px 0 rgba(0,0,0,.084);
+}
+
+.z-depth3 {
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.14),0 6px 10px 0 rgba(0,0,0,.098),0 1px 18px 0 rgba(0,0,0,.084);
+}
+
+.z-depth4 {
+    box-shadow: 0 5px 5px -3px rgba(0,0,0,.14),0 8px 10px 1px rgba(0,0,0,.098),0 3px 14px 2px rgba(0,0,0,.084);
+}
+
+.z-depth5 {
+    box-shadow: 0 8px 10px -5px rgba(0,0,0,.14),0 16px 24px 2px rgba(0,0,0,.098),0 6px 30px 5px rgba(0,0,0,.084);
+}
+
+.header {
+    background-image: url(../images/beo-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+
+    img {
+        max-width: 200px;
+    }
+
+    .header__info {
+        padding-top: 130px;
+        color: #fff;
+    }
+
+    .name {
+        margin: 10px;
+        padding-top: 60px;
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: 600;
+            text-shadow: 2px 2px 2px #f42;
+        }
+    }
+}
+
+.main {
+    margin-top: 50px;
+}
+
+.section-info {
+    //padding: 10px;
+
+    > div {
+        font-size: .85em;
+        padding: 5px;
+
+        i {
+            margin-right: 5px;
+            min-width: 20px;
+            display: inline-block;
+        }
+
+        span {
+            color: $blue;
+        }
+    }
+}
+
+.info {
+    .info__slogan {
+        padding: 25px 0;
+        border-bottom: 1px solid #ddd;
+    }
+}
