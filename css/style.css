@@ -1,5 +1,8 @@
 html, body {
-  background-color: #fafafa; }
+  background-color: #fafafa;
+  background-color: #fff;
+  background-image: linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px), linear-gradient(#eee 0.1em, transparent 0.1em);
+  background-size: 100% 1.2em; }
 
 body {
   padding-bottom: 50px; }
@@ -46,21 +49,27 @@ body {
     padding-top: 60px; }
     .header .name h1 {
       font-size: 2.5em;
-      font-weight: 600;
-      text-shadow: 2px 2px 2px #f42; }
+      font-weight: 600; }
 
 .main {
   margin-top: 50px; }
 
-.section-info > div {
-  font-size: .85em;
+.section div {
   padding: 5px; }
-  .section-info > div i {
+  .section div i {
     margin-right: 5px;
     min-width: 20px;
     display: inline-block; }
-  .section-info > div span {
+  .section div span {
     color: #2196f3; }
+.section .tit {
+  border-left: 24px solid #f42;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #f42; }
+.section .p div {
+  font-size: .85em;
+  padding: 5px; }
 
 .info .info__slogan {
   padding: 25px 0;
