@@ -1,6 +1,7 @@
 //---variables
 $blue: #2196f3;
 $main: #f42;
+$dark: #212121;
 
 //---settings
 html, body {
@@ -83,12 +84,15 @@ body {
     margin-top: 50px;
 }
 
+.fa {
+    color: $blue;
+}
+
 .section {
     //padding: 10px;
     div {
         //font-size: .85em;
-        padding: 5px;
-
+        //padding: 5px;
         i {
             margin-right: 5px;
             min-width: 20px;
@@ -105,6 +109,7 @@ body {
         font-weight: 900;
         text-transform: uppercase;
         color: $main;
+        padding: 5px;
     }
 
     .p div {
@@ -117,5 +122,77 @@ body {
     .info__slogan {
         padding: 25px 0;
         border-bottom: 1px solid #ddd;
+    }
+}
+
+//---exp
+.exp {
+    padding: 15px 25px;
+
+    + .exp {
+        border-top: 1px dashed #ddd;
+    }
+
+    h3 {
+        margin: 0;
+        font-weight: 900;
+        font-size: 1.3em;
+        position: relative;
+        margin-bottom: 20px;
+        color: $main;
+        text-transform: uppercase;
+
+        span {
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+        &:after {
+            position: absolute;
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: #f42;
+            top: 100%;
+            margin-top: 5px;
+        }
+    }
+
+    h4 {
+        margin: 0;
+        font-size: .9em;
+        text-transform: uppercase;
+    }
+}
+
+//--skill
+.skills {
+    padding-bottom: 1px;
+}
+
+.skill {
+    margin: 8px;
+    margin-top: 12px;
+
+    h5 {
+        margin: 0;
+        font-size: .8em;
+        padding-bottom: 2px;
+
+        span {
+            color: $dark;
+            font-size: .8em;
+        }
+    }
+}
+
+.skill div {
+    background-color: $main;
+
+    span {
+        display: block;
+        height: 5px;
+        background-color: $blue;
     }
 }
