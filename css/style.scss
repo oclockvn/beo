@@ -1,7 +1,11 @@
+//-prefixer
+@import 'prefixer';
+
 //---variables
 $blue: #2196f3;
 $main: #f42;
 $dark: #212121;
+$light: #aaa;
 
 //---settings
 html, body {
@@ -118,11 +122,9 @@ body {
     }
 }
 
-.info {
-    .info__slogan {
-        padding: 25px 0;
-        border-bottom: 1px solid #ddd;
-    }
+.info__slogan {
+    padding: 25px 0;
+    border-bottom: 1px solid #ddd;
 }
 
 //---exp
@@ -195,5 +197,51 @@ body {
         display: block;
         height: 5px;
         background-color: $blue;
+    }
+}
+
+.exp__ref {
+    @include flexbox;
+    @include align(center);
+    background-color: $blue; //#e2dfdf;
+    padding: 10px 25px;
+    color: #fff;
+
+    h5 {
+        margin: 0;
+        font-weight: 400;
+    }
+
+    span {
+        font-size: .85em;
+        margin-right: 10px;
+        color: #fff !important;
+
+        + span {
+            margin-left: 5px;
+        }
+    }
+
+    b {
+        font-size: .7em;
+        text-transform: uppercase;
+    }
+}
+
+.hobbies {
+    span {
+        font-size: .85em;
+        border: 1px solid $blue;
+        padding: 3px 5px;
+        display: inline-block;
+        margin: 0 4px 4px 0;
+        float: left;
+        text-transform: capitalize;
+
+        &:hover {
+            background-color: $blue;
+            color: #fff;
+            cursor: pointer;
+        }
     }
 }
